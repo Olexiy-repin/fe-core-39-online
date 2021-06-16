@@ -6,50 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <nav>
-            <a href="./">
-                <img src="./images/header/logo.svg" alt="логотип" width="68" height="54" />
+    <header class="header">
+        <nav class="navigation">
+            <a class="logo link" href="./">
+                <img class="logo-icon" src="./images/header/logo.svg" alt="логотип" width="68" height="54" />
             </a>
-            <ul>
-                <li>
-                    <a href="">О нас</a>
+            <ul class="menu list">
+                <li class="menu-item">
+                    <a class="menu-link link current" href="">О нас</a>
                 </li>
-                <li>
-                    <a href="">Услуги и цены</a>
+                <li class="menu-item">
+                    <a class="menu-link link" href="">Услуги и цены</a>
                 </li>
-                <li>
-                    <a href="">Мастера</a>
+                <li class="menu-item">
+                    <a class="menu-link link" href="">Мастера</a>
                 </li>
-                <li>
-                    <a href="">Контакты</a>
+                <li class="menu-item">
+                    <a class="menu-link link" href="">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">онлайн-запись</button>
+        <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="modal-btn" type="button">онлайн-запись</button>
     </header>
     <main>
         <!-- HERO -->
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <a href="" lang="en">Instagram</a>
+        <section class="hero">
+            <div class="hero-left-side">
+                <ul class="social-links-list list">
+                    <li class="socail-links-list-item">
+                        <a class="social-links-list-link link" href="" lang="en">Instagram</a>
                     </li>
-                    <li>
-                        <a href="" lang="en">Youtube</a>
+                    <li class="socail-links-list-item">
+                        <a class="social-links-list-link link" href="" lang="en">Youtube</a>
                     </li>
                 </ul>
             </div>
-            <div>
-                <p lang="en">A hair salon for men in Kyiv</p>
-                <h1 lang="en">BarberShop</h1>
-                <p>
+            <div class="hero-right-side">
+                <p class="suptitle" lang="en">A hair salon for men in Kyiv</p>
+                <h1 class="hero-title" lang="en">BarberShop</h1>
+                <p class="description">
                     Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
                     со вкусом.
                 </p>
