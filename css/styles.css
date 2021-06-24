@@ -17,6 +17,83 @@ body {
   font-weight: 600;
 }
 
+/* ============= COMPONENTS ============= */
+.modal-btn {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  /* color: #ffffff; */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.social-links-list-link {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.social-links-list-link:hover,
+.social-links-list-link:focus {
+  color: var(--accent-color);
+}
+
+.suptitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-theme-light {
+  color: #303030;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.description-theme-dark {
+  color: #9da4bd;
+}
+
+.description-theme-light {
+  color: #555555;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.title-theme-dark {
+  color: #ffffff;
+}
+
+.title-theme-light {
+  color: #303030;
+}
+/* ============= END COMPONENTS ============= */
+
 /* ============= HEADER ============= */
 .menu-link {
   font-size: 12px;
@@ -46,44 +123,9 @@ body {
 .tel-link:focus {
   color: var(--accent-color);
 }
-
-.modal-btn {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  /* color: #ffffff; */
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
-}
 /* ============= END HEADER ============= */
 
 /* ============= HERO ============= */
-.social-links-list-link {
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-}
-
-.social-links-list-link:hover,
-.social-links-list-link:focus {
-  color: var(--accent-color);
-}
-
-.suptitle {
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
-}
-
 .hero-title {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -92,12 +134,87 @@ body {
   letter-spacing: 0.05em;
   /* color: #ffffff; */
 }
+/* ============= END HERO ============= */
 
-.description {
+/* ============= ABOUT ============= */
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+/* ============= END ABOUT ============= */
+
+/* ============= SERVICES ============= */
+.services-list-name,
+.services-list-price {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ============= END SERVICES ============= */
+
+/* ============= ADVANTAGES ============= */
+.advantages-list-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages-list-desc {
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+/* ============= END ADVANTAGES ============= */
+
+/* ============= MASTERS ============= */
+.masters-list-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-list-position {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* ============= END MASTERS ============= */
+
+/* ============= CONTACT INFORMATION ============= */
+.contact-list-link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-date {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-/* ============= END HERO ============= */
+/* ============= END CONTACT INFORMATION ============= */
+
+.copyright {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
