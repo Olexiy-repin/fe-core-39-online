@@ -4,6 +4,28 @@
   --accent-color: #ff6c00;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -17,8 +39,24 @@ body {
   font-weight: 600;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /* ============= COMPONENTS ============= */
 .modal-btn {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 12px 20px;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
@@ -51,6 +89,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .suptitle-theme-dark {
@@ -95,6 +134,34 @@ body {
 /* ============= END COMPONENTS ============= */
 
 /* ============= HEADER ============= */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu-link {
   font-size: 12px;
   line-height: 1.33;
@@ -115,6 +182,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
 
   /* color: #ffffff; */
 }
@@ -175,6 +244,28 @@ body {
 /* ============= END ADVANTAGES ============= */
 
 /* ============= MASTERS ============= */
+.masters {
+  background-color: #f7f7f7;
+}
+
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+
+.masters-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .masters-list-title {
   font-weight: 400;
   font-size: 18px;

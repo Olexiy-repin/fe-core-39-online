@@ -10,33 +10,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="navigation">
-            <a class="logo link" href="./">
-                <img class="logo-icon" src="./images/header/logo.svg" alt="логотип" width="68" height="54" />
-            </a>
-            <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link link current" href="">О нас</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Услуги и цены</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Мастера</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="logo link" href="./">
+                    <img class="logo-icon" src="./images/header/logo.svg" alt="логотип" width="68" height="54" />
+                </a>
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="menu-link link current" href="">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Услуги и цены</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Мастера</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="#feedback">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="modal-btn" type="button">онлайн-запись</button>
+        </div>
     </header>
     <main>
         <!-- HERO -->
@@ -155,29 +160,31 @@
         </section>
 
         <!-- MASTERS -->
-        <section class="masters">
-            <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
-            <h2 class="title title-theme-light">Наши мастера</h2>
-            <ul class="masters-list list">
-                <li class="masters-list-item">
-                    <img class="masters-list-img" src="./images/masters/john-smith.jpg" alt="мастер стрижет клиента"
-                        width="370" height="346" />
-                    <h3 class="masters-list-title" lang="en">John Smith</h3>
-                    <p class="masters-list-position" lang="en">ExtrTeme Barber</p>
-                </li>
-                <li class="masters-list-item">
-                    <img class="masters-list-img" src="./images/masters/michele-doe.jpg" alt="мастер стрижет клиента"
-                        width="370" height="346" />
-                    <h3 class="masters-list-title" lang="en">Michele Doe</h3>
-                    <p class="masters-list-position" lang="en">ExtrTeme Barber</p>
-                </li>
-                <li class="masters-list-item">
-                    <img class="masters-list-img" src="./images/masters/alan-black.jpg" alt="мастер стрижет клиента"
-                        width="370" height="346" />
-                    <h3 class="masters-list-title" lang="en">Alan Black</h3>
-                    <p class="masters-list-position" lang="en">ExtrTeme Barber</p>
-                </li>
-            </ul>
+        <section class="masters section">
+            <div class="container">
+                <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
+                <h2 class="title masters-title title-theme-light">Наши мастера</h2>
+                <ul class="masters-list list">
+                    <li class="masters-list-item">
+                        <img class="masters-list-img" src="./images/masters/john-smith.jpg" alt="мастер стрижет клиента"
+                            width="370" height="346" />
+                        <h3 class="masters-list-title" lang="en">John Smith</h3>
+                        <p class="masters-list-position" lang="en">ExtrTeme Barber</p>
+                    </li>
+                    <li class="masters-list-item">
+                        <img class="masters-list-img" src="./images/masters/michele-doe.jpg"
+                            alt="мастер стрижет клиента" width="370" height="346" />
+                        <h3 class="masters-list-title" lang="en">Michele Doe</h3>
+                        <p class="masters-list-position" lang="en">ExtrTeme Barber</p>
+                    </li>
+                    <li class="masters-list-item">
+                        <img class="masters-list-img" src="./images/masters/alan-black.jpg" alt="мастер стрижет клиента"
+                            width="370" height="346" />
+                        <h3 class="masters-list-title" lang="en">Alan Black</h3>
+                        <p class="masters-list-position" lang="en">ExtrTeme Barber</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- GALLERY -->
@@ -205,7 +212,7 @@
         </section>
 
         <!-- FEEDBACK -->
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <h2 class="title">Онлайн-запись</h2>
         </section>
         <!-- CONTACT INFORMATION -->
