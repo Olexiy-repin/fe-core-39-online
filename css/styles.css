@@ -72,10 +72,19 @@ body {
   color: #ffffff;
 }
 
+.social-links-list {
+  display: flex;
+  align-items: center;
+}
+.socail-links-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .social-links-list-link {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+  color: #303030;
 }
 
 .social-links-list-link:hover,
@@ -195,26 +204,102 @@ body {
 /* ============= END HEADER ============= */
 
 /* ============= HERO ============= */
+.hero-container {
+  display: flex;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  flex-grow: 1;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
   /* color: #ffffff; */
+}
+
+.hero-description {
+  max-width: 400px;
 }
 /* ============= END HERO ============= */
 
 /* ============= ABOUT ============= */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-description {
+  max-width: 440px;
+  margin-bottom: 20px;
+}
+
+.about-left-side,
+.about-right-side {
+  flex-basis: calc((100% / 2) - 30px);
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-text {
+  max-width: 480px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 /* ============= END ABOUT ============= */
 
 /* ============= SERVICES ============= */
+.services-modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-title {
+  margin-bottom: 44px;
+}
+
+.services-list-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  flex-basis: 50%;
+  padding: 30px 40px;
+  border: 1px solid #303030;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-list-name,
 .services-list-price {
   font-size: 18px;
@@ -226,6 +311,43 @@ body {
 /* ============= END SERVICES ============= */
 
 /* ============= ADVANTAGES ============= */
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-title {
+  margin-bottom: 20px;
+}
+
+.advantages-description {
+  max-width: 470px;
+}
+
+.advantages-left-side,
+.advantages-right-side {
+  flex-basis: calc((100% / 2) - 30px);
+}
+
+.advantages-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.advantages-list-item {
+  flex-basis: 170px;
+  padding: 20px;
+  border: 1px solid #303030;
+}
+
+.advantages-list-item:nth-child(odd) {
+  margin-bottom: 30px;
+}
+
 .advantages-list-count {
   font-weight: 700;
   font-size: 42px;
@@ -233,6 +355,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 6px;
 }
 
 .advantages-list-desc {
@@ -266,6 +389,10 @@ body {
   margin-top: 30px;
 }
 
+.masters-list-content {
+  padding-top: 30px;
+}
+
 .masters-list-title {
   font-weight: 400;
   font-size: 18px;
@@ -273,6 +400,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 
 .masters-list-position {
@@ -285,7 +413,48 @@ body {
 }
 /* ============= END MASTERS ============= */
 
+/* ============= GALLERY ============= */
+.gallery-suptitle {
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.gallery-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* ============= END GALLERY ============= */
+.contact-data-container {
+  display: flex;
+}
+
+.contact-data-title {
+  margin-bottom: 44px;
+}
+
+.feedback,
+.contact-info {
+  flex-basis: 50%;
+}
 /* ============= CONTACT INFORMATION ============= */
+.contact-info {
+  padding-left: 100px;
+}
+
+.contact-list {
+  margin-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .contact-list-link {
   font-size: 18px;
   font-weight: 400;
@@ -303,9 +472,21 @@ body {
 }
 /* ============= END CONTACT INFORMATION ============= */
 
+/* ============= FOOTER ============= */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
 }
+/* ============= END FOOTER ============= */
