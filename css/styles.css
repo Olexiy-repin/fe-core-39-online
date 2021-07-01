@@ -66,6 +66,10 @@ body {
   /* color: #ffffff; */
 }
 
+.modal-btn-theme-dark {
+  color: #ffffff;
+}
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
@@ -76,6 +80,17 @@ body {
   display: flex;
   align-items: center;
 }
+
+.social-links-list::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
 .socail-links-list-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -93,6 +108,8 @@ body {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.36;
@@ -101,12 +118,28 @@ body {
   margin-bottom: 20px;
 }
 
+.suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+
+  margin-right: 20px;
+}
+
 .suptitle-theme-dark {
   color: rgba(157, 164, 189, 0.6);
 }
 
+.suptitle-theme-dark::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
 .suptitle-theme-light {
   color: #303030;
+}
+
+.suptitle-theme-light::before {
+  background-color: #303030;
 }
 
 .description {
@@ -139,6 +172,32 @@ body {
 
 .title-theme-light {
   color: #303030;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--accent-color);
+  background-color: #303030;
 }
 /* ============= END COMPONENTS ============= */
 
@@ -214,6 +273,13 @@ body {
 
 .hero-right-side {
   flex-grow: 1;
+  background-color: #303030;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/hero/bg.jpg");
+  background-size: cover;
   padding-top: 272px;
   padding-bottom: 206px;
   padding-left: 100px;
@@ -226,7 +292,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .hero-description {
@@ -271,6 +337,12 @@ body {
 /* ============= END ABOUT ============= */
 
 /* ============= SERVICES ============= */
+.services {
+  background-image: url("../images/services/bg.png");
+  background-size: cover;
+  background-color: #111319;
+}
+
 .services-modal-btn {
   display: block;
   margin: 0 auto;
@@ -282,13 +354,42 @@ body {
 
 .services-list-wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
 .services-list {
   flex-basis: 50%;
   padding: 30px 40px;
-  border: 1px solid #303030;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+/* 
+4n-1
+
+4 * 0 - 1 = -1;
+4 * 1 - 1 = 3;
+4 * 2 - 1 = 7;
+
+4n - 2
+4 * 0 - 2 = -2;
+4 * 1 - 2 = 2;
+4 * 2 - 2 = 6;
+
+2,3,6,7
+*/
+
+.services-list:nth-child(4n-1),
+.services-list:nth-child(4n-2) {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .services-list-item {
@@ -391,6 +492,8 @@ body {
 
 .masters-list-content {
   padding-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
 }
 
 .masters-list-title {
@@ -410,6 +513,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 /* ============= END MASTERS ============= */
 
