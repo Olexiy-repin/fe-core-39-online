@@ -62,8 +62,7 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-
-  /* color: #ffffff; */
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .modal-btn-theme-dark {
@@ -79,6 +78,8 @@ body {
 .social-links-list {
   display: flex;
   align-items: center;
+  transform: rotate(-90deg) translateX(-18px);
+  transform-origin: left top;
 }
 
 .social-links-list::before {
@@ -100,6 +101,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms linear;
 }
 
 .social-links-list-link:hover,
@@ -203,6 +205,10 @@ body {
 
 /* ============= HEADER ============= */
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -219,6 +225,8 @@ body {
 
 .logo {
   margin-right: 70px;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
 }
 
 .menu {
@@ -234,7 +242,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: #ffffff; */
+  color: #ffffff;
+  transition: color 250ms linear;
 }
 
 .menu-link:hover,
@@ -252,8 +261,8 @@ body {
   letter-spacing: 0.1em;
   margin-left: auto;
   margin-right: 40px;
-
-  /* color: #ffffff; */
+  color: #ffffff;
+  transition: color 250ms linear;
 }
 
 .tel-link:hover,
@@ -268,7 +277,11 @@ body {
 }
 
 .hero-left-side {
+  display: flex;
+  align-items: flex-end;
   width: 100px;
+  padding-left: 34px;
+  padding-bottom: 40px;
 }
 
 .hero-right-side {
@@ -634,3 +647,47 @@ body {
   color: #9da4bd;
 }
 /* ============= END FOOTER ============= */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
