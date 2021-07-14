@@ -41,8 +41,8 @@
 </symbol>
 
 <symbol id="mail" viewBox="0 0 32 32">
-<path fill="none" stroke="#9da4bd" style="stroke: var(--color2, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M6.4 6.667h19.2c1.32 0 2.4 1.050 2.4 2.333v14c0 1.283-1.080 2.333-2.4 2.333h-19.2c-1.32 0-2.4-1.050-2.4-2.333v-14c0-1.283 1.080-2.333 2.4-2.333z"></path>
-<path fill="none" stroke="#9da4bd" style="stroke: var(--color2, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 9.333l-10.667 8-10.667-8"></path>
+<path transition="all 250ms linear" fill="none" stroke="#9da4bd" style="stroke: var(--color2, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M6.4 6.667h19.2c1.32 0 2.4 1.050 2.4 2.333v14c0 1.283-1.080 2.333-2.4 2.333h-19.2c-1.32 0-2.4-1.050-2.4-2.333v-14c0-1.283 1.080-2.333 2.4-2.333z"></path>
+<path transition="all 250ms linear" fill="none" stroke="#9da4bd" style="stroke: var(--color2, #9da4bd)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 9.333l-10.667 8-10.667-8"></path>
 </symbol>
 
 <symbol id="map-pin" viewBox="0 0 32 32">

@@ -51,7 +51,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-left-side">
-                    <ul class="social-links-list list">
+                    <ul class="social-links-list hero-social-links-list list">
                         <li class="socail-links-list-item">
                             <a class="social-links-list-link link" href="" lang="en">Instagram</a>
                         </li>
@@ -300,7 +300,7 @@
         <!-- GALLERY -->
         <section class="gallery section">
             <div class="container">
-                <h2 hidden>Галерея работ</h2>
+                <h2 class="visually-hidden">Галерея работ</h2>
                 <p class="suptitle suptitle-theme-light gallery-suptitle">На латинском языке “барба” означает “борода”
                 </p>
                 <ul class="gallery-list list">
@@ -383,13 +383,42 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>X</button>
+            <form action="#" class="modal-form">
+                <p class="modal-form-head">Оставьте свои данные</p>
+                <label class="modal-form-field">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" class="modal-form-input" name="user-name" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы"
+                            required>
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" class="modal-form-input" name="user-phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-000-00-00" required>
+                        <span class="modal-form-icon"></span>
+                    </span>
+
+                </label>
+                <label class="modal-form-field">
+                    Комментарий
+                    <textarea name="user-message" class="modal-form-message" placeholder="Ваше сообщение"></textarea>
+                </label>
+                <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+                <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                        href="#" class="modal-form-label-link">Условия договора</a></label>
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
