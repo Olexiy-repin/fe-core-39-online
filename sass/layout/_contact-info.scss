@@ -1,0 +1,47 @@
+.contact-info {
+  padding-left: 100px;
+}
+
+.contact-info-address {
+  font-style: normal;
+  max-width: 260px;
+}
+
+.contact-list {
+  margin-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-list-link {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  transition: color 250ms linear;
+}
+
+.contact-list-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.contact-list-icon-map {
+  align-self: baseline;
+  margin-top: 6px;
+}
+
+.contact-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
