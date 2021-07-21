@@ -11,8 +11,10 @@
   margin-bottom: 70px;
 }
 
-.contact-list-item:not(:last-child) {
-  margin-bottom: 20px;
+.contact-list-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-list-link {

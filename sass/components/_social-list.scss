@@ -17,10 +17,10 @@
   border-radius: 50%;
   background-color: #ffffff;
   transition: fill 250ms linear, background-color 250ms linear;
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: var(--accent-color);
-  background-color: #303030;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    background-color: #303030;
+  }
 }

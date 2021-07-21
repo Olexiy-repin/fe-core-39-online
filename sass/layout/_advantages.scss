@@ -29,10 +29,10 @@
   flex-basis: 170px;
   padding: 20px;
   background-color: #f7f7f7;
-}
 
-.advantages-list-item:nth-child(odd) {
-  margin-bottom: 30px;
+  &:nth-child(odd) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages-list-count {
