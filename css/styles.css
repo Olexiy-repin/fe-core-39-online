@@ -27,20 +27,99 @@ ol {
 }
 
 body {
-  /* background-color: tomato; */
+  background-color: tomato;
 }
 
 /* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Когда ширина вьюпорта в браузере будет 400px или больше, применить правила внутри */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
 
+/* Когда ширина вьюпорта в браузере будет 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* Когда ширина вьпорта в браузере от 0 и до 767px, применить правила внутри */
+/* @media (max-width: 767px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* Когда ширина вьюпорта в браузере от 0 и до 500px, применить правила внутри */
+/* @media (max-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
 /* ========== AND ========== */
+/*
 
+768+
+и
+0 - 1199
+
+*/
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: thistle;
+  }
+} */
 /* ========== OR ========== */
+/* 
 
+0 - 767
+или
+1200+
+
+*/
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: thistle;
+  }
+} */
 /* ========== TYPES ========== */
 /* 
   all
   screen 
   print
+  speech
 */
 
+/* @media print {
+  .menu {
+    display: none;
+  }
+
+  .modal-btn {
+    display: none;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+} */
+
 /* ========== ORIENTATION ========== */
+/* @media screen and (orientation: portrait) {
+  body {
+    background-color: thistle;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-color: teal;
+  }
+} */
