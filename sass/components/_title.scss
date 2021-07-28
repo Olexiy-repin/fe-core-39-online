@@ -1,6 +1,6 @@
 .title {
   font-family: var(--secondary-font);
-  @include font(42px, 700, 49px);
+  @include font(28px, 700, 33px);
   letter-spacing: 0.05em;
 }
 
@@ -10,4 +10,10 @@
 
 .title-theme-light {
   color: #303030;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    @include font($fs: 42px, $lh: 49px);
+  }
 }
